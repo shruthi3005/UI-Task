@@ -23,7 +23,7 @@ html {
 
  .navbar {
   min-height: 50px;
-  overflow: hidden;
+  overflow: inherit;
 }
 
 .container-fluid{
@@ -114,7 +114,7 @@ height: 100vh;
 display: flex;
 }
 
-.text1>p{
+.text1 p{
   color: #FFFFFF;
   display: block;
   line-height: 1;
@@ -191,7 +191,7 @@ font-family: "acumin-pro",“Helvetica Neue”,Helvetica,Arial,sans-serif;  font
   background-color: black;
 }
 
-.blackbg>h3{
+.blackbg h3{
   text-align: center;
   font-size: 20px;
   font-family: "acumin-pro",“Helvetica Neue”,Helvetica,Arial,sans-serif;
@@ -240,17 +240,17 @@ font-family: "acumin-pro",“Helvetica Neue”,Helvetica,Arial,sans-serif;  font
   position: relative;
   font-family: "acumin-pro-extra-condensed"
 }
-.block1>h4{
+.block1 h4{
   font-size: 16px;
 }
-.block1>p{
+.block1 p{
   font-size: 14.08px;
 }
 .carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
 }
-.item>img{
+.item img{
     float: left;
   width: 33.33%;
   padding: 5px;
@@ -283,6 +283,7 @@ font-family: "acumin-pro",“Helvetica Neue”,Helvetica,Arial,sans-serif;  font
 
 
 
+
 #outer {
   display: table;
   width: 100%;
@@ -294,6 +295,21 @@ font-family: "acumin-pro",“Helvetica Neue”,Helvetica,Arial,sans-serif;  font
   width: 100%;
   padding-bottom: 10px;
 }
+.im1{
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  font-family: acumin-pro-condensed;
+}
+
+.subim{
+  color: #B4B4B4;
+  font-size: 14.08px;
+  text-align: center;
+  font-family: acumin-pro-condensed;
+  
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -319,12 +335,12 @@ h3{
   background-color: black;
   font-family:"acumin-pro-extra-condensed";
 } 
-.text3>h1{
+.text3 h1{
   font-size: 48px;
   text-align: center;
   color: #FFFFFF;
 }
-.text3>center{
+.text3 center{
   font-size: 16px;
   color: #666666;
 }
@@ -332,11 +348,11 @@ h3{
   float: left;
   background-color: black;
 }
-.text4>h2{
+.text4 h2{
   font-size: 28px;
   color: #666666;
 }
-.text4>p{
+.text4 p{
   font-size: 16px;
   color: #COA987;
   margin: 0;
@@ -346,11 +362,11 @@ h3{
  float:right;
   background-color: black;
 }
-.text6>p{
+.text6 p{
   font-size: 16px;
   color: #COA987;
 }
-.text6>h2{
+.text6 h2{
   font-size: 28px;
   color: #666666;
 }
@@ -358,18 +374,18 @@ h3{
   text-align: center;
   background-color: black;
 }
-.text5>h2{
+.text5 h2{
   font-size: 28px;
   color: #666666;
 }
-.text5>p{
+.text5 p{
   font-size: 16px;
   color: #COA987;
   margin: 0;
  padding-bottom: 100px;
 }
 
-.image>img{
+.image img{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -381,7 +397,7 @@ h3{
   font-size: 20px;
   font-family:"acumin-pro",“Helvetica Neue”,Helvetica,Arial,sans-serif;
 }
-.footer>button{
+.footer button{
   display: block;
   max-width: 300px;
   margin: auto;
@@ -390,7 +406,7 @@ h3{
   background: #f44805;
   border: 4px solid #f44805;
 }
-.image>img{
+.image img{
   background-color: black;
   float: left;
   margin: 0;
@@ -469,7 +485,7 @@ h3{
   padding: 30.08px 30.08px 60px;
   background-color: white; 
 }
-.feedback>h4{
+.feedback h4{
   color: #222222;
  font: 20px acumin-pro-condensed, "“Helvetica Neue”", Helvetica, Arial, sans-serif;
    text-align: left;
@@ -477,11 +493,11 @@ h3{
 .stars{
   text-align: left;
 }
-.feedback>p{
+.feedback p{
   font: 16px "acumini-pro";
   color: #666666;
 }
-.feedback>h3{
+.feedback h3{
   font: 20px "acumini-pro";
 }
 .column1 {
@@ -535,3 +551,69 @@ form.example::after {
   right: 0;
   padding-left: 130px;
 }
+
+
+
+
+
+
+a { color: gray; }
+#navbar10 li:first-child a { color: black }
+#navbar10 li li:first-child a { color: gray }
+
+
+#navbar10 {}
+
+/* Level 1 */
+#navbar10 ul { padding: 5px; width: 100%;}
+#navbar10 li {
+    display: inline;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Level 2 */
+#navbar10 ul ul {
+    display: none;
+    position: absolute;
+    top: 15px;
+    left: 0
+}
+#navbar10 li:hover ul { display: inline }
+#navbar10 li:hover ul ul { display: none }
+#navbar10 li li {
+    float:left;
+    clear: left;
+}
+
+/* Level 3 */
+
+#navbar10 ul ul ul {
+    display: block;
+    width: 100px;
+    background: #eee;
+}
+#navbar10 li li:hover ul {
+    display: block;
+    left: 25px;
+    z-index: 100;
+    position: relative;
+    visibility: visible;
+    width: 100vw;
+}
+
+#navbar10{
+  display: inline;
+  width: 95%;
+}
+
+#navbar10 ul li ul li{
+  width: 150px;
+}
+
+#navbar10 ul li ul li a:hover{
+  display: block;
+  float: left;
+  z-index: 9999;
+}
+
