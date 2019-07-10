@@ -550,70 +550,22 @@ form.example::after {
   bottom: 0;
   right: 0;
   padding-left: 130px;
+
 }
-
-
-
-
-
-
-a { color: gray; }
-#navbar10 li:first-child a { color: black }
-#navbar10 li li:first-child a { color: gray }
-
-
-#navbar10 {}
-
-/* Level 1 */
-#navbar10 ul { padding: 5px; width: 100%;}
-#navbar10 li {
-    display: inline;
-    position: relative;
-    white-space: nowrap;
+.col-sm-3 a h6{
+color: black;
+text-decoration: none;
+font: 18px;
+font-family:  acumin-pro;
+font-weight: bold;
+display: block;
+text-decoration: none;
 }
-
-/* Level 2 */
-#navbar10 ul ul {
-    display: none;
-    position: absolute;
-    top: 15px;
-    left: 0
+.col-sm-3 h6:hover{
+  color: grey;
+  text-decoration: none;
 }
-#navbar10 li:hover ul { display: inline }
-#navbar10 li:hover ul ul { display: none }
-#navbar10 li li {
-    float:left;
-    clear: left;
+.col-sm-3{
+  width: 100%;
+  height: auto;
 }
-
-/* Level 3 */
-
-#navbar10 ul ul ul {
-    display: block;
-    width: 100px;
-    background: #eee;
-}
-#navbar10 li li:hover ul {
-    display: block;
-    left: 25px;
-    z-index: 100;
-    position: relative;
-    visibility: visible;
-    width: 100vw;
-}
-
-#navbar10{
-  display: inline;
-  width: 95%;
-}
-
-#navbar10 ul li ul li{
-  width: 150px;
-}
-
-#navbar10 ul li ul li a:hover{
-  display: block;
-  float: left;
-  z-index: 9999;
-}
-
